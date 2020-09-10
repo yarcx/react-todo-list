@@ -6,9 +6,6 @@ import "./styles.css";
 class App extends Component {
   state = {
     list: [
-      { id: 1, text: "here we go again", edit: false },
-      { id: 2, text: "here we go again", edit: false },
-      { id: 3, text: "here we go again", edit: false }
     ]
   };
 

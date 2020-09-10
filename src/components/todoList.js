@@ -6,11 +6,18 @@ class TodoList extends Component {
     return (
       <div className="todo-list">
         <h1>Todo List</h1>
-        <List
-          list={this.props.list}
-          deleteTodo={this.props.deleteTodo}
-          editTodo={this.props.editTodo}
-        />
+        {
+          this.props.list.length ? (
+            <List
+              list={this.props.list}
+              deleteTodo={this.props.deleteTodo}
+              editTodo={this.props.editTodo}
+            />
+          ) : (
+              <div className="list" >
+                <li >Yay!!... You've got nothing left todo</li>
+              </div>
+            )}
       </div>
     );
   }
